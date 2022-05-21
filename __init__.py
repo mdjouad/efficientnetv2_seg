@@ -1,0 +1,1 @@
+from .efficientnetv2_seg.model import EfficientNetV2Seg
