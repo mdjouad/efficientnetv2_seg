@@ -4,7 +4,7 @@ from tensorflow.keras.activations import swish
 
 
 def res_block(x, filters):
-    shortcut = layers.Conv2D(filters, kernel_size=1, padding="same", use_bias=False)(x)
+    shortcut = layers.Conv2D(filters, kernel_size=1, padding="same")(x)
 
     x = layers.Conv2D(filters, kernel_size=3, padding="same", use_bias=False)(x)
     x = layers.BatchNormalization()(x)
