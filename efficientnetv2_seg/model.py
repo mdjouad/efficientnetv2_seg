@@ -1,7 +1,7 @@
 from tensorflow.keras import layers, models
 from tensorflow.keras.applications import EfficientNetV2S
 
-from model_parts import res_block, decoder_block, model_head
+from .model_parts import res_block, decoder_block, model_head
 
 
 skips_layer_names = (
